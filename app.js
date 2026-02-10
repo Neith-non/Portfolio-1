@@ -1,24 +1,31 @@
 const express = require('express');
+const serverless = require('serverless-http');
 const morgan = require('morgan');
+const path = require('path');
 
 const app = express();
 
-app.set('view engine', 'ejs');
-app.use(express.static("public"))
+// Middleware
 app.use(morgan('dev'));
 
+// IMPORTANT: Fix static file serving for Serverless
+// This points to the 'public' folder relative to where this function runs
+app.use(express.static(path.join(__dirname, '../public')));
+
+// Set view engine
+app.set('view engine', 'ejs');
+// IMPORTANT: Point to 'views' relative to this function
+app.set('views', path.join(__dirname, '../views'));
+
+// Routes
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
-
-
+// 404 Handler
 app.use((req, res) => {
-    res.status(404).render('404', {title: '404'})
+    res.status(404).render('404', {title: '404 - Not Found'});
 });
 
-
+// Export the handler for Netlify
+module.exports.handler = serverless(app);
