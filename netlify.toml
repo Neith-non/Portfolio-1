@@ -1,6 +1,10 @@
 [build]
   functions = "functions"
 
+[functions]
+  # This tells Netlify to bundle these folders with your function
+  included_files = ["views/**/*.ejs", "public/**/*"]
+
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/api"
