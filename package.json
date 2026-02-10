@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "ejs": "^4.0.1",
-    "express": "^5.2.1",
-    "morgan": "^1.10.1",
-    "serverless-http": "^3.2.0" 
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "serverless-http": "^3.2.0"
   }
 }
