@@ -25,6 +25,13 @@
                     },
                     animation: {
                         'bounce-slow': 'bounce 3s infinite',
+                        'float': 'float 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
                     }
                 }
             }
@@ -72,16 +79,22 @@
         <div class="lg:w-7/12 p-8 lg:p-20 flex flex-col justify-center relative z-10">
             <div class="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
             
-            <nav class="absolute top-8 left-8 lg:left-20 text-brand-light font-bold tracking-widest text-xs uppercase">
-                Neithan.Dev // 2026
-            </nav>
+            <div class="absolute top-8 left-0 w-full px-8 lg:px-20 flex justify-between items-start pointer-events-none z-50">
+                
+                <nav class="text-brand-light font-bold tracking-widest text-xs uppercase pointer-events-auto mt-2">
+                    Neithan.Dev // 2026
+                </nav>
 
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-400/10 border border-emerald-400/20 mb-8 w-fit backdrop-blur-md">
-                <span class="relative flex h-2 w-2">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                </span>
-                <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase">Available for Inquiries</span>
+                <div class="relative group pointer-events-auto">
+                    <a href="#contact" class="relative z-10 inline-flex items-center gap-3 px-5 py-2 bg-brand-dark border-2 border-brand-lightest text-brand-lightest font-display font-bold uppercase tracking-widest text-xs shadow-[4px_4px_0_#eaebfe] hover:translate-y-1 hover:shadow-none hover:bg-brand-lightest hover:text-brand-deep transition-all duration-150 active:translate-y-1 active:shadow-none">
+                        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                        Available for Inquiries
+                    </a>
+
+                    <div class="absolute top-full -right-4 mt-2 z-20 animate-float pointer-events-none">
+                        <img src="/images/cursor.png" alt="Cursor" class="w-10 h-auto pixel-art drop-shadow-[2px_2px_0_rgba(0,0,0,0.5)]">
+                    </div>
+                </div>
             </div>
 
             <h1 class="font-display font-extrabold text-5xl lg:text-8xl leading-[0.9] mb-8 text-brand-lightest">
@@ -320,7 +333,7 @@
         </div>
     </section>
 
-    <footer class="bg-[#011a36] border-t border-brand-mid/20 text-brand-lightest">
+    <footer id="contact" class="bg-[#011a36] border-t border-brand-mid/20 text-brand-lightest">
         <div class="max-w-7xl mx-auto px-6 lg:px-20 py-20 flex flex-col md:flex-row justify-between items-center">
             
             <div class="mb-10 md:mb-0 text-center md:text-left">

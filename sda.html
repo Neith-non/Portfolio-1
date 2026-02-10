@@ -25,6 +25,13 @@
                     },
                     animation: {
                         'bounce-slow': 'bounce 3s infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-10px) rotate(-5deg)' },
+                        }
                     }
                 }
             }
@@ -72,19 +79,28 @@
         <div class="lg:w-7/12 p-8 lg:p-20 flex flex-col justify-center relative z-10">
             <div class="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
             
-            <nav class="absolute top-8 left-8 lg:left-20 text-brand-light font-bold tracking-widest text-xs uppercase">
-                Neithan.Dev // 2026
-            </nav>
+            <div class="absolute top-8 left-0 w-full px-8 lg:px-20 flex justify-between items-start pointer-events-none z-50">
+                
+                <nav class="text-brand-light font-bold tracking-widest text-xs uppercase pointer-events-auto mt-2">
+                    Neithan.Dev // 2026
+                </nav>
 
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-400/10 border border-emerald-400/20 mb-8 w-fit backdrop-blur-md">
-                <span class="relative flex h-2 w-2">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                </span>
-                <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase">Available for Inquiries</span>
+                <div class="relative group pointer-events-auto">
+                    <a href="#contact" class="relative z-10 inline-flex items-center gap-3 px-5 py-2 bg-brand-dark border-2 border-brand-lightest text-brand-lightest font-display font-bold uppercase tracking-widest text-xs shadow-[4px_4px_0_#eaebfe] hover:translate-y-1 hover:shadow-none hover:bg-brand-lightest hover:text-brand-deep transition-all duration-150 active:translate-y-1 active:shadow-none">
+                        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                        Inquiries?
+                    </a>
+
+                    <div class="absolute top-full -right-4 mt-2 z-20 animate-float pointer-events-none">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-[2px_2px_0_rgba(0,0,0,0.5)]">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 2H3V4H2V17H3V19H5V21H7V18H8V17H10V16H12V15H14V14H16V13H18V11H19V2H5.5ZM5 4H17V9H16V10H14V11H12V12H10V13H8V14H6V15H5V4Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 21V19H5V17H2V4H3V2H5.5H19V11H18V13H16V14H14V15H12V16H10V17H8V18H7V21ZM17 9V4H5V15H6V14H8V13H10V12H12V11H14V10H16V9H17Z" fill="#354c7c"/> 
+                        </svg>
+                    </div>
+                </div>
             </div>
 
-            <h1 class="font-display font-extrabold text-5xl lg:text-8xl leading-[0.9] mb-8 text-brand-lightest">
+            <h1 class="font-display font-extrabold text-5xl lg:text-8xl leading-[0.9] mb-8 text-brand-lightest mt-20 lg:mt-0">
                 LOGIC <br>
                 MEETS <br>
                 <span class="text-brand-dark" style="-webkit-text-stroke: 1px #eaebfe; color: transparent;">MOTION.</span>
@@ -320,7 +336,7 @@
         </div>
     </section>
 
-    <footer class="bg-[#011a36] border-t border-brand-mid/20 text-brand-lightest">
+    <footer id="contact" class="bg-[#011a36] border-t border-brand-mid/20 text-brand-lightest">
         <div class="max-w-7xl mx-auto px-6 lg:px-20 py-20 flex flex-col md:flex-row justify-between items-center">
             
             <div class="mb-10 md:mb-0 text-center md:text-left">
