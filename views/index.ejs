@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neithan Deniel B. Gula | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            lightest: '#eaebfe', 
+                            light: '#b0b8ce',   
+                            mid: '#505a74',      
+                            dark: '#354c7c',     
+                            deep: '#022954',     
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Space Grotesk"', 'sans-serif'],
+                        display: ['"Syne"', 'sans-serif'],
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(53, 76, 124, 0.2);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(176, 184, 206, 0.1);
+        }
+        
+        .horizontal-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+        .horizontal-scroll::-webkit-scrollbar-track {
+            background: rgba(2, 41, 84, 0.5);
+        }
+        .horizontal-scroll::-webkit-scrollbar-thumb {
+            background: #354c7c;
+            border-radius: 3px;
+        }
+        .horizontal-scroll::-webkit-scrollbar-thumb:hover {
+            background: #eaebfe;
+        }
+        
+        .skill-pip {
+            transition: background-color 0.3s ease;
+        }
+        .group:hover .skill-pip.active {
+            box-shadow: 0 0 8px #eaebfe;
+        }
+        
+        .pixel-art {
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        }
+    </style>
+</head>
+<body class="bg-brand-deep text-brand-lightest font-sans min-h-screen selection:bg-brand-lightest selection:text-brand-deep">
+
+    <header class="min-h-screen flex flex-col lg:flex-row relative overflow-hidden">
+        
+        <div class="lg:w-7/12 p-8 lg:p-20 flex flex-col justify-center relative z-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
+            
+            <nav class="absolute top-8 left-8 lg:left-20 text-brand-light font-bold tracking-widest text-xs uppercase">
+                Neithan.Dev // 2026
+            </nav>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-400/10 border border-emerald-400/20 mb-8 w-fit backdrop-blur-md">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase">Available for Inquiries</span>
+            </div>
+
+            <h1 class="font-display font-extrabold text-5xl lg:text-8xl leading-[0.9] mb-8 text-brand-lightest">
+                LOGIC <br>
+                MEETS <br>
+                <span class="text-brand-dark" style="-webkit-text-stroke: 1px #eaebfe; color: transparent;">MOTION.</span>
+            </h1>
+
+            <div class="border-l-2 border-brand-dark pl-6 mb-10 max-w-lg">
+                <p class="text-xl lg:text-2xl text-brand-light font-light italic">
+                    "I build the engines that make the web run and the games play."
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-6 relative">
+                <div class="flex items-center gap-4">
+                    <div class="h-px w-12 bg-brand-light"></div>
+                    <p class="text-brand-mid uppercase text-sm tracking-widest font-bold">Neithan Deniel B. Gula</p>
+                </div>
+
+                <div class="relative">
+                    
+                    <div class="max-w-md bg-brand-dark/20 border border-brand-mid/30 p-4 rounded backdrop-blur-sm relative z-10">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 w-2 h-2 rounded-full bg-brand-lightest animate-pulse"></div>
+                            <div>
+                                <p class="text-xs text-brand-light uppercase tracking-widest font-bold mb-1">Education</p>
+                                <h4 class="text-brand-lightest font-bold text-lg leading-tight">Western Mindanao State University</h4>
+                                <p class="text-brand-light text-sm mt-1">College of Computing Studies</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="/images/pixel-char.gif" 
+                         alt="Pixel Character" 
+                         class="pixel-art absolute -top-20 -right-20 w-50 h-50 animate-bounce-slow z-10 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="lg:w-5/12 bg-brand-dark/20 border-l border-brand-mid/30 relative flex flex-col h-screen lg:h-auto">
+            
+            <div class="h-1/2 relative group overflow-hidden border-b border-brand-mid/30 shrink-0">
+                <div class="absolute inset-0 bg-brand-deep/50 flex items-center justify-center group-hover:bg-brand-deep/30 transition-all duration-500">
+                    <div class="w-64 h-64 rounded-full border-2 border-brand-lightest/20 p-2 relative">
+                        <img src="/images/me.jpg" alt="Neithan Profile" class="w-full h-full rounded-full object-cover transition-all duration-500">
+                        <div class="absolute -inset-4 border border-dashed border-brand-light/30 rounded-full animate-[spin_10s_linear_infinite]"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-1/2 bg-brand-deep flex flex-col justify-center relative overflow-hidden">
+                
+                <div class="px-10 pt-6 mb-4 flex justify-between items-end">
+                    <h3 class="text-brand-lightest font-display font-bold text-2xl">
+                        Skill Stats <span class="text-sm font-mono text-brand-dark">/ Scroll -></span>
+                    </h3>
+                    <div class="text-[4rem] font-display font-bold text-brand-mid/10 leading-none select-none">XP</div>
+                </div>
+
+                <div class="horizontal-scroll flex overflow-x-auto snap-x snap-mandatory px-10 pb-10 gap-8 h-full items-start">
+                    
+                    <div class="snap-center shrink-0 w-72 bg-brand-dark/10 border border-brand-mid/30 p-6 rounded-lg">
+                        <h4 class="text-brand-light font-bold uppercase tracking-widest text-xs mb-4 border-b border-brand-mid/30 pb-2">Languages</h4>
+                        <div class="space-y-4">
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">C++</span> <span class="text-brand-mid">LVL 08</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 8 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">Python</span> <span class="text-brand-mid">LVL 07</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 7 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">PHP</span> <span class="text-brand-mid">LVL 06</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 6 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="snap-center shrink-0 w-72 bg-brand-dark/10 border border-brand-mid/30 p-6 rounded-lg">
+                        <h4 class="text-brand-light font-bold uppercase tracking-widest text-xs mb-4 border-b border-brand-mid/30 pb-2">Backend & DB</h4>
+                        <div class="space-y-4">
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">Node.js</span> <span class="text-brand-mid">LVL 04</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 4 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">MySQL</span> <span class="text-brand-mid">LVL 05</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 5 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">Express</span> <span class="text-brand-mid">LVL 04</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 4 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="snap-center shrink-0 w-72 bg-brand-dark/10 border border-brand-mid/30 p-6 rounded-lg">
+                        <h4 class="text-brand-light font-bold uppercase tracking-widest text-xs mb-4 border-b border-brand-mid/30 pb-2">Frontend</h4>
+                        <div class="space-y-4">
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">HTML / CSS</span> <span class="text-brand-mid">LVL 05</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 5 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">Tailwind</span> <span class="text-brand-mid">LVL 04</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 4 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">EJS Templates</span> <span class="text-brand-mid">LVL 05</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 5 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="snap-center shrink-0 w-72 bg-brand-dark/10 border border-brand-mid/30 p-6 rounded-lg">
+                        <h4 class="text-brand-light font-bold uppercase tracking-widest text-xs mb-4 border-b border-brand-mid/30 pb-2">Core Stats</h4>
+                        <div class="space-y-4">
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">Backend Logic</span> <span class="text-brand-mid">LVL 08</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 8 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">UI Designing</span> <span class="text-brand-mid">LVL 07</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 7 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                             <div class="group">
+                                <div class="flex justify-between mb-1 text-xs font-bold uppercase"><span class="text-brand-lightest">Problem Solving</span> <span class="text-brand-mid">LVL 08</span></div>
+                                <div class="flex gap-1 h-2">
+                                    <% for(let i=0; i<10; i++) { %> 
+                                        <div class="flex-1 rounded-sm <%= i < 8 ? 'bg-brand-lightest skill-pip active' : 'bg-brand-mid/20' %>"></div> 
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="snap-center shrink-0 w-4"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="work" class="py-24 px-6 lg:px-20 relative border-t border-brand-mid/20">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display font-black text-6xl text-brand-dark opacity-20 absolute top-10 right-10 select-none">WORKS</h2>
+            <h2 class="text-3xl font-bold mb-16 relative inline-block">
+                Selected Projects
+                <span class="absolute -bottom-2 left-0 w-1/2 h-1 bg-brand-lightest"></span>
+            </h2>
+
+            <div class="group relative flex flex-col md:flex-row gap-10 mb-20">
+                <div class="md:w-1/4 flex flex-col items-start md:items-end md:text-right pt-2">
+                    <span class="text-brand-dark font-display font-bold text-5xl">2025</span>
+                    <span class="text-brand-light text-sm uppercase tracking-widest mt-2">Dec - Present</span>
+                </div>
+                <div class="md:w-3/4 border-l-2 border-brand-dark pl-8 md:pl-12 py-2 relative">
+                    <div class="absolute -left-[9px] top-4 w-4 h-4 bg-brand-lightest rounded-full border-4 border-brand-deep"></div>
+                    <h3 class="text-2xl font-bold text-brand-lightest mb-2 group-hover:text-brand-light transition-colors">RoBai (Robot Buddy)</h3>
+                    <p class="text-brand-light mb-6 max-w-2xl leading-relaxed">
+                        A game concept focusing on customization and social interaction. Players utilize a "Scrap Yard" mechanic to find parts and build unique robots. Features include collaborative photo modes and social lobbies.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="px-3 py-1 bg-brand-dark/30 text-brand-lightest text-xs font-mono rounded border border-brand-dark">Kotlin</span>
+                        <span class="px-3 py-1 bg-brand-dark/30 text-brand-lightest text-xs font-mono rounded border border-brand-dark">XML</span>
+                        <span class="px-3 py-1 bg-brand-dark/30 text-brand-lightest text-xs font-mono rounded border border-brand-dark">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/4 flex flex-col items-start md:items-end md:text-right pt-2">
+                    <span class="text-brand-dark font-display font-bold text-5xl">2026</span>
+                    <span class="text-brand-light text-sm uppercase tracking-widest mt-2">Jan - Feb</span>
+                </div>
+                <div class="md:w-3/4 border-l-2 border-brand-dark pl-8 md:pl-12 py-2 relative">
+                    <div class="absolute -left-[9px] top-4 w-4 h-4 bg-brand-lightest rounded-full border-4 border-brand-deep"></div>
+                    <h3 class="text-2xl font-bold text-brand-lightest mb-2 group-hover:text-brand-light transition-colors">Student Clearance System</h3>
+                    <p class="text-brand-light mb-6 max-w-2xl leading-relaxed">
+                        A full-stack web application designed for the College of Computing Studies. Streamlines the semester clearance process by digitizing signatures and database management for student records.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="px-3 py-1 bg-brand-dark/30 text-brand-lightest text-xs font-mono rounded border border-brand-dark">PHP</span>
+                        <span class="px-3 py-1 bg-brand-dark/30 text-brand-lightest text-xs font-mono rounded border border-brand-dark">MySQL</span>
+                        <span class="px-3 py-1 bg-brand-dark/30 text-brand-lightest text-xs font-mono rounded border border-brand-dark">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-[#011a36] border-t border-brand-mid/20 text-brand-lightest">
+        <div class="max-w-7xl mx-auto px-6 lg:px-20 py-20 flex flex-col md:flex-row justify-between items-center">
+            
+            <div class="mb-10 md:mb-0 text-center md:text-left">
+                <h2 class="font-display font-bold text-4xl mb-2">Let's Connect.</h2>
+                <p class="text-brand-mid">Open for development inquiries.</p>
+            </div>
+
+            <div class="flex flex-col gap-4 w-full md:w-auto">
+                <a href="mailto:gulaneithandeniel@gmail.com" class="group flex items-center justify-between gap-6 px-8 py-4 bg-brand-dark hover:bg-brand-lightest hover:text-brand-deep transition-all duration-300 rounded text-sm font-bold tracking-wider uppercase">
+                    <span>Email Me</span>
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+                
+                <div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 pt-4 text-brand-mid text-sm">
+                    <a href="https://github.com/Neith-non" target="_blank" class="hover:text-brand-lightest transition-colors">Github</a>
+                    <a href="https://www.linkedin.com/in/neithan-deniel-gula-32a8a33a7" target="_blank" class="hover:text-brand-lightest transition-colors">LinkedIn</a>
+                    <a href="https://www.instagram.com/neithneith_/" target="_blank" class="hover:text-brand-lightest transition-colors">Instagram</a>
+                    <a href="https://www.facebook.com/neithhateneith" target="_blank" class="hover:text-brand-lightest transition-colors">Facebook</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center py-6 text-xs text-brand-mid border-t border-brand-mid/10">
+            © 2026 Neithan Deniel B. Gula. Built with Node.js & EJS.
+        </div>
+    </footer>
+
+</body>
+</html>
