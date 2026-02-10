@@ -1,10 +1,12 @@
 [build]
   functions = "functions"
+  publish = "public"   # <--- THIS IS THE MISSING KEY!
 
 [functions]
-  # This tells Netlify to bundle these folders with your function
-  included_files = ["views/**/*.ejs", "public/**/*"]
+  # We still bundle views so the function can render the HTML
+  included_files = ["views/**/*.ejs"]
 
+# Redirect everything ELSE to the function
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/api"

@@ -31,5 +31,10 @@ app.use((req, res) => {
     res.status(404).render('404', {title: '404 - Not Found'});
 });
 
-// Export the app as a serverless function
-module.exports.handler = serverless(app);
+// Change this:
+// module.exports.handler = serverless(app);
+
+// To this:
+module.exports.handler = serverless(app, {
+    binary: ['image/*'] // Tells the function "Don't mess up my images!"
+});
