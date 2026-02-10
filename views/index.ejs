@@ -76,35 +76,35 @@
 
     <header class="min-h-screen flex flex-col lg:flex-row relative overflow-hidden">
         
-        <div class="lg:w-7/12 p-8 lg:p-20 flex flex-col justify-center relative z-10">
+        <div class="lg:w-7/12 p-6 lg:p-20 flex flex-col justify-center relative z-10">
             <div class="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
             
-            <div class="absolute top-8 left-0 w-full px-8 lg:px-20 flex justify-between items-start pointer-events-none z-50">
+            <div class="relative lg:absolute top-0 left-0 w-full px-6 pt-6 lg:px-20 lg:pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center pointer-events-none z-50 mb-10 lg:mb-0">
                 
-                <nav class="text-brand-light font-bold tracking-widest text-xs uppercase pointer-events-auto mt-2">
+                <nav class="text-brand-light font-bold tracking-widest text-xs uppercase pointer-events-auto mb-4 sm:mb-0">
                     Neithan.Dev // 2026
                 </nav>
 
-                <div class="relative group pointer-events-auto">
-                    <a href="#contact" class="relative z-10 inline-flex items-center gap-3 px-5 py-2 bg-brand-dark border-2 border-brand-lightest text-brand-lightest font-display font-bold uppercase tracking-widest text-xs shadow-[4px_4px_0_#eaebfe] hover:translate-y-1 hover:shadow-none hover:bg-brand-lightest hover:text-brand-deep transition-all duration-150 active:translate-y-1 active:shadow-none">
+                <div class="relative group pointer-events-auto self-end sm:self-auto">
+                    <a href="#contact" class="relative z-10 inline-flex items-center gap-3 px-4 py-2 lg:px-5 lg:py-2 bg-brand-dark border-2 border-brand-lightest text-brand-lightest font-display font-bold uppercase tracking-widest text-[10px] lg:text-xs shadow-[3px_3px_0_#eaebfe] lg:shadow-[4px_4px_0_#eaebfe] hover:translate-y-1 hover:shadow-none hover:bg-brand-lightest hover:text-brand-deep transition-all duration-150 active:translate-y-1 active:shadow-none">
                         <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
                         Available for Inquiries
                     </a>
 
-                    <div class="absolute top-full -right-4 mt-2 z-20 animate-float pointer-events-none">
-                        <img src="/images/cursor.png" alt="Cursor" class="w-10 h-auto pixel-art drop-shadow-[2px_2px_0_rgba(0,0,0,0.5)]">
+                    <div class="absolute top-full -right-2 lg:-right-4 mt-2 z-20 animate-float pointer-events-none">
+                        <img src="/images/cursor.png" alt="Cursor" class="w-8 lg:w-10 h-auto pixel-art drop-shadow-[2px_2px_0_rgba(0,0,0,0.5)]">
                     </div>
                 </div>
             </div>
 
-            <h1 class="font-display font-extrabold text-5xl lg:text-8xl leading-[0.9] mb-8 text-brand-lightest">
+            <h1 class="font-display font-extrabold text-5xl lg:text-8xl leading-[0.9] mb-8 text-brand-lightest mt-4 lg:mt-0">
                 LOGIC <br>
                 MEETS <br>
                 <span class="text-brand-dark" style="-webkit-text-stroke: 1px #eaebfe; color: transparent;">MOTION.</span>
             </h1>
 
             <div class="border-l-2 border-brand-dark pl-6 mb-10 max-w-lg">
-                <p class="text-xl lg:text-2xl text-brand-light font-light italic">
+                <p class="text-lg lg:text-2xl text-brand-light font-light italic">
                     "I build the engines that make the web run and the games play."
                 </p>
             </div>
@@ -130,30 +130,30 @@
 
                     <img src="/images/pixel-char.gif" 
                          alt="Pixel Character" 
-                         class="pixel-art absolute -top-20 -right-20 w-50 h-50 animate-bounce-slow z-10 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                         class="pixel-art absolute -top-12 -right-4 lg:-top-20 lg:-right-20 w-24 h-24 lg:w-48 lg:h-48 animate-bounce-slow z-20 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                 </div>
 
             </div>
         </div>
 
-        <div class="lg:w-5/12 bg-brand-dark/20 border-l border-brand-mid/30 relative flex flex-col h-screen lg:h-auto">
+        <div class="lg:w-5/12 bg-brand-dark/20 border-l border-brand-mid/30 relative flex flex-col h-auto lg:h-auto">
             
-            <div class="h-1/2 relative group overflow-hidden border-b border-brand-mid/30 shrink-0">
+            <div class="h-96 lg:h-1/2 relative group overflow-hidden border-b border-brand-mid/30 shrink-0">
                 <div class="absolute inset-0 bg-brand-deep/50 flex items-center justify-center group-hover:bg-brand-deep/30 transition-all duration-500">
-                    <div class="w-64 h-64 rounded-full border-2 border-brand-lightest/20 p-2 relative">
+                    <div class="w-48 h-48 lg:w-64 lg:h-64 rounded-full border-2 border-brand-lightest/20 p-2 relative">
                         <img src="/images/me.jpg" alt="Neithan Profile" class="w-full h-full rounded-full object-cover transition-all duration-500">
                         <div class="absolute -inset-4 border border-dashed border-brand-light/30 rounded-full animate-[spin_10s_linear_infinite]"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="h-1/2 bg-brand-deep flex flex-col justify-center relative overflow-hidden">
+            <div class="h-auto lg:h-1/2 bg-brand-deep flex flex-col justify-center relative overflow-hidden py-10 lg:py-0">
                 
                 <div class="px-10 pt-6 mb-4 flex justify-between items-end">
                     <h3 class="text-brand-lightest font-display font-bold text-2xl">
                         Skill Stats <span class="text-sm font-mono text-brand-dark">/ Scroll -></span>
                     </h3>
-                    <div class="text-[4rem] font-display font-bold text-brand-mid/10 leading-none select-none">XP</div>
+                    <div class="text-[3rem] lg:text-[4rem] font-display font-bold text-brand-mid/10 leading-none select-none">XP</div>
                 </div>
 
                 <div class="horizontal-scroll flex overflow-x-auto snap-x snap-mandatory px-10 pb-10 gap-8 h-full items-start">
@@ -284,15 +284,15 @@
         </div>
     </header>
 
-    <section id="work" class="py-24 px-6 lg:px-20 relative border-t border-brand-mid/20">
+    <section id="work" class="py-16 lg:py-24 px-6 lg:px-20 relative border-t border-brand-mid/20">
         <div class="max-w-7xl mx-auto">
-            <h2 class="font-display font-black text-6xl text-brand-dark opacity-20 absolute top-10 right-10 select-none">WORKS</h2>
+            <h2 class="font-display font-black text-4xl lg:text-6xl text-brand-dark opacity-20 absolute top-6 lg:top-10 right-6 lg:right-10 select-none">WORKS</h2>
             <h2 class="text-3xl font-bold mb-16 relative inline-block">
                 Selected Projects
                 <span class="absolute -bottom-2 left-0 w-1/2 h-1 bg-brand-lightest"></span>
             </h2>
 
-            <div class="group relative flex flex-col md:flex-row gap-10 mb-20">
+            <div class="group relative flex flex-col md:flex-row gap-6 md:gap-10 mb-20">
                 <div class="md:w-1/4 flex flex-col items-start md:items-end md:text-right pt-2">
                     <span class="text-brand-dark font-display font-bold text-5xl">2025</span>
                     <span class="text-brand-light text-sm uppercase tracking-widest mt-2">Started April</span>
@@ -306,7 +306,7 @@
                         Simple UI/UX 1st year web dev API usage of Pokemon using HTML/CSS/JS.
                     </p>
                     
-                    <a href="https://pokedexnitan.netlify.app/" target="_blank" class="block mb-6 w-64 p-2 bg-brand-dark/50 border-2 border-brand-mid rounded shadow-lg hover:scale-105 transition-transform duration-300">
+                    <a href="https://pokedexnitan.netlify.app/" target="_blank" class="block mb-6 w-64 max-w-full p-2 bg-brand-dark/50 border-2 border-brand-mid rounded shadow-lg hover:scale-105 transition-transform duration-300">
                         <img src="/images/pokedex.png" alt="Pokedex Screenshot" class="w-full h-auto rounded border border-brand-mid/50 opacity-90 hover:opacity-100 transition-opacity">
                     </a>
 
@@ -319,7 +319,7 @@
                 </div>
             </div>
 
-            <div class="group relative flex flex-col md:flex-row gap-10 mb-20">
+            <div class="group relative flex flex-col md:flex-row gap-6 md:gap-10 mb-20">
                 <div class="md:w-1/4 flex flex-col items-start md:items-end md:text-right pt-2">
                     <span class="text-brand-dark font-display font-bold text-5xl">2025</span>
                     <span class="text-brand-light text-sm uppercase tracking-widest mt-2">Started Dec</span>
@@ -338,7 +338,7 @@
                 </div>
             </div>
 
-            <div class="group relative flex flex-col md:flex-row gap-10">
+            <div class="group relative flex flex-col md:flex-row gap-6 md:gap-10">
                 <div class="md:w-1/4 flex flex-col items-start md:items-end md:text-right pt-2">
                     <span class="text-brand-dark font-display font-bold text-5xl">2026</span>
                     <span class="text-brand-light text-sm uppercase tracking-widest mt-2">Started Jan</span>
