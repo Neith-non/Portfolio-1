@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates | Neithan Deniel B. Gula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            lightest: '#eaebfe', 
+                            light: '#b0b8ce',   
+                            mid: '#505a74',      
+                            dark: '#354c7c',     
+                            deep: '#022954',     
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Space Grotesk"', 'sans-serif'],
+                        display: ['"Syne"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-deep text-brand-lightest font-sans min-h-screen relative overflow-x-hidden">
+
+    <div class="fixed top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-0"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto p-6 lg:p-20">
+        
+        <a href="/" class="inline-flex items-center gap-2 text-brand-light hover:text-brand-lightest transition-colors mb-12 uppercase text-xs font-bold tracking-widest">
+            <span>←</span> Back to Portfolio
+        </a>
+
+        <h1 class="font-display font-bold text-5xl lg:text-7xl mb-16 text-brand-lightest">
+            WHAT'S <br>
+            <span class="text-brand-dark" style="-webkit-text-stroke: 1px #eaebfe; color: transparent;">HAPPENING.</span>
+        </h1>
+
+        <div class="border-l-2 border-brand-mid/30 pl-8 lg:pl-12 space-y-16">
+
+            <div class="relative group">
+                <div class="absolute -left-[41px] lg:-left-[57px] top-2 w-5 h-5 bg-brand-deep border-4 border-emerald-400 rounded-full animate-pulse"></div>
+                
+                <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-2">
+                    <h2 class="text-2xl font-bold text-emerald-400">2nd Year Internship</h2>
+                    <span class="text-brand-mid text-sm font-mono border border-brand-mid/50 rounded px-2 py-0.5">Currently Partaking</span>
+                </div>
+                
+                <p class="text-brand-light text-sm uppercase tracking-widest mb-4">2026 // Western Mindanao State University</p>
+                
+                <div class="bg-brand-dark/20 border border-brand-mid/30 p-6 rounded-lg backdrop-blur-sm">
+                    <p class="text-brand-lightest leading-relaxed">
+                        As a WMSU student, I am actively engaged in my 2nd-year internship, securing an on-site placement to learn, contribute, and gain valuable real-world job experience in a professional environment.
+                    </p>
+                </div>
+            </div>
+
+            </div>
+
+    </div>
+    
+
+</body>
+</html>
