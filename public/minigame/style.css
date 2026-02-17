@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevents scrollbars */
+    background-color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #70c5ce;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#score {
+    font-size: 5vh; /* Responsive font size */
+    font-weight: bold;
+    color: white;
+    margin-top: 5vh;
+    text-shadow: 2px 2px 0 #000;
+}
+
+#start-message {
+    margin-top: 30vh;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+    animation: bounce 1s infinite alternate;
+}
+
+button {
+    pointer-events: auto;
+    margin-top: 30vh;
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+button {
+    background-color: #ff5252;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(10px); }
+}

@@ -15,6 +15,11 @@ app.get('/updates', (req, res) => {
     res.render('updates');
 });
 
+app.get('/catloon', (req, res) => {
+    res.render('catloon');
+});
+
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

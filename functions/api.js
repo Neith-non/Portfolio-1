@@ -21,6 +21,11 @@ app.get('/updates', (req, res) => {
 });
 // ---------------------------
 
+app.get('/catloon', (req, res) => {
+    res.render('catloon');
+});
+
+
 app.use((req, res) => {
     res.status(404).render('404', {title: '404 - Not Found'});
 });
