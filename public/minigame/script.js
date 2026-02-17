@@ -76,7 +76,7 @@ function initInput() {
     
     // Quit/Back Button (FIXED: Wrapped in function)
     document.getElementById('back-port').addEventListener('click', function() {
-        window.location.href = '/index';
+        window.location.href = '/';
     });
 }
 initInput();

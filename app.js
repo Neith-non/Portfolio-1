@@ -11,9 +11,6 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.get('/index', (req, res) => {
-    res.render('index');
-});
 
 app.get('/updates', (req, res) => {
     res.render('updates');
