@@ -19,6 +19,11 @@ canvas {
     width: 100%;
     height: 100%;
     background-color: #70c5ce;
+    
+    /* --- NEW MOBILE CSS --- */
+    touch-action: none; /* Disables browser zooming/scrolling */
+    user-select: none;  /* Prevents highlighting text */
+    -webkit-tap-highlight-color: transparent; /* Removes the blue tap box on Android */
 }
 
 #ui-layer {
