@@ -15,16 +15,17 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-// --- NEW ROUTE ADDED HERE ---
 app.get('/updates', (req, res) => {
     res.render('updates');
 });
-// ---------------------------
 
 app.get('/catloon', (req, res) => {
     res.render('catloon');
 });
 
+app.get('/updates/internship', (req, res) => {
+    res.render('blog-post');
+});
 
 app.use((req, res) => {
     res.status(404).render('404', {title: '404 - Not Found'});
