@@ -16,7 +16,20 @@ app.get('/', (req, res) => {
 });
 
 app.get('/updates', (req, res) => {
-    res.render('updates');
+    
+    const timelineData = [
+        {
+            title: "2nd Year Internship",
+            status: "Currently Partaking",
+            dateInfo: "2026 // Western Mindanao State University",
+            desctitle:"Stepping out of the classroom and into the industry.",
+            description: "As a WMSU student, we go out to find a site to internship and learn, help, and gain on-site job experience in a real-world professional environment.",
+            link: "/updates/internship",
+            linkText: "Read Full Entry"
+        }
+    ];
+
+    res.render('updates', { events: timelineData });
 });
 
 app.get('/catloon', (req, res) => {
