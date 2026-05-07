@@ -67,7 +67,7 @@ app.get('/updates/internship', (req, res) => {
                 ],
                 images: [],
                 gif: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWhpM2c0bDNpNndtbXY3dTJjY2U0NjgzdHF5M25kZTMxczQ1cmowYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xpI9kszfSCMQAr4wmS/giphy.gif"
-            }
+            },
             {
                 week: "Week 3",
                 date: "March 2, 2026 - March 6, 2026",
