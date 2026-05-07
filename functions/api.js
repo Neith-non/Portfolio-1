@@ -66,7 +66,6 @@ app.get('/updates/internship', (req, res) => {
 
                 ],
                 images: [],
-                gif: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWhpM2c0bDNpNndtbXY3dTJjY2U0NjgzdHF5M25kZTMxczQ1cmowYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xpI9kszfSCMQAr4wmS/giphy.gif"
             },
             {
                 week: "Week 3",
@@ -76,6 +75,18 @@ app.get('/updates/internship', (req, res) => {
                     'This week at the Saint Joseph School Foundation, Inc. IT Department, we focused heavily on project planning and team alignment. We cleared up some initial confusion and confirmed that the "Calendar of Events" and the RFID-based Library Attendance system are two separate exploratory projects. I presented our drafted project questionnaires to our supervisor, Sir Jv, for feedback, and also spent time analyzing the logic and architecture of an RFID prototype built by a fellow intern to ensure I understood its functionality.',
                     'The presentation turned into a great learning experience about project management and "scope creep". Sir Jv pointed out several unnecessary or unclear questions in our survey, so I took detailed notes and we are currently revising it to focus only on essential data. It was a realistic look at the professional approval process and a neat way to apply Human-Computer Interaction concepts from my classes to a real-world UI demo. Moving into next week, the team is much more focused. I plan to finish the questionnaire revisions, coordinate more closely with the intern team on the RFID project, and take an active role in building the logic and drafting the database schema for whichever project gets prioritized.'
                 ]
+            },
+            {
+                week: "Week 4",
+                date: 'March 9, 2026 - March 13, 2026',
+                title: 'Bridging the Gap—From Human Conversation to System Logic',
+                content: [
+                    'This week at the Saint Joseph School Foundation, Inc. IT Department, we officially wrapped up the requirements gathering phase for the "Calendar of Events" system. We started by finalizing a comprehensive questionnaire tailored to map out user roles, core features, and page functions. I then conducted a formal, collaborative interview with a key stakeholder, Ma\'am Lyn, using our questions to lock down a mutual agreement on the system\'s exact scope. The main challenge was keeping the conversation accessible and non-technical so she could easily express her needs, which worked out perfectly. Afterward, I translated those abstract conversational insights into a strict, step-by-step operational flow to give our project a structured logical framework.',
+                    'Beyond system design, I also got some great out-of-office technical exposure by participating in a school-sanctioned Robotics Expo at KCC Mall with the SJSFI team. It was an awesome opportunity to see real-world hardware-software integration, observing how microcontrollers like Arduino and Raspberry Pi operate using C++ programming. Direct user interaction taught me that open communication yields much more accurate requirements than just guessing in isolation. With a clear direction established and no roadblocks in sight, we are moving into next week highly encouraged. The goal now is to translate our new system flow into tangible UI/UX wireframes or an Entity Relationship Diagram (ERD), review it with the team and our supervisor, and start setting up our development environment.'
+                ]
+            },
+            {
+                
             }
         ]
     };
