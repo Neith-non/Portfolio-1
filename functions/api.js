@@ -2,6 +2,7 @@ const express = require('express');
 const serverless = require('serverless-http');
 const morgan = require('morgan');
 const path = require('path');
+const { title } = require('process');
 require('ejs'); 
 
 const app = express();
@@ -66,6 +67,15 @@ app.get('/updates/internship', (req, res) => {
                 ],
                 images: [],
                 gif: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWhpM2c0bDNpNndtbXY3dTJjY2U0NjgzdHF5M25kZTMxczQ1cmowYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xpI9kszfSCMQAr4wmS/giphy.gif"
+            }
+            {
+                week: "Week 3",
+                date: "March 2, 2026 - March 6, 2026",
+                title: "Project Alignment, RFID Exploration, and Refining the Scope",
+                content: [
+                    'This week at the Saint Joseph School Foundation, Inc. IT Department, we focused heavily on project planning and team alignment. We cleared up some initial confusion and confirmed that the "Calendar of Events" and the RFID-based Library Attendance system are two separate exploratory projects. I presented our drafted project questionnaires to our supervisor, Sir Jv, for feedback, and also spent time analyzing the logic and architecture of an RFID prototype built by a fellow intern to ensure I understood its functionality.',
+                    'The presentation turned into a great learning experience about project management and "scope creep". Sir Jv pointed out several unnecessary or unclear questions in our survey, so I took detailed notes and we are currently revising it to focus only on essential data. It was a realistic look at the professional approval process and a neat way to apply Human-Computer Interaction concepts from my classes to a real-world UI demo. Moving into next week, the team is much more focused. I plan to finish the questionnaire revisions, coordinate more closely with the intern team on the RFID project, and take an active role in building the logic and drafting the database schema for whichever project gets prioritized.'
+                ]
             }
         ]
     };
