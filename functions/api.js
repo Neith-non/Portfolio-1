@@ -86,7 +86,13 @@ app.get('/updates/internship', (req, res) => {
                 ]
             },
             {
-                
+                week: "Week 5",
+                date: 'March 16, 2026 to March 20, 2026',
+                title: 'Database Blueprints, Legacy Code, and the Art of the "Soft Delete"',
+                content: [
+                    'This week, we moved from planning to building our technical setup. I started by using our interview notes to finish a clear step-by-step flowchart for the "Calendar of Events" system. Next, the team worked together to design the database architecture. We fixed data repetition issues, mapped out how tables connect, and wrote the final SQL code. It was great practice for creating a clean data system from scratch.',
+                    'I also took a break from our main project to help the school librarian fix an active library system. I had to read code I did not write and add a "soft delete" feature. This hides records instead of erasing them forever, which protects important files from accidental deletion. It was rewarding to write code that immediately helped the staff. Next week, we will set up our database in MySQL and start designing the login and dashboard pages.'
+                ]
             }
         ]
     };
